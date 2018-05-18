@@ -1,0 +1,28 @@
+html, body {
+  height: 100% !important;
+}
+
+.viewport {
+  width: 100%;
+  height: 100%;
+}
+
+.searchspace {
+  height: 540px;
+}
+
+.google-logo {
+  display: block;
+  width: auto;
+  padding-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search {
+  text-align: center;
+}
+
+.search input, .search button {
+  display: inline-block;
+}
