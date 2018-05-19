@@ -1,10 +1,63 @@
-html, body {
-  height: 100% !important;
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
 }
 
 .viewport {
   width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+
+.topbar {
+  height: 50px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-family: Arial;
+  margin-right: 1.4em;
+  vertical-align: middle;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.topbar .icon {
+  opacity: 0.7;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-width: 0px;
+}
+
+.topbar .icon:hover {
+  background-color: black;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.topbar #options {
+  width: 16px;
+  height: 16px;
+  background-image: url(options-image.png);
+}
+
+.topbar #notifications {
+  width: 20px;
+  height: 20px;
+  background-image: url(notification-image.png);
 }
 
 .searchspace {
@@ -14,15 +67,88 @@ html, body {
 .google-logo {
   display: block;
   width: auto;
-  padding-top: 300px;
+  padding-top: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .search {
+  padding-top: 20px;
+  width: auto;
   text-align: center;
 }
 
 .search input, .search button {
   display: inline-block;
+}
+
+.search input {
+  border-width: 0px;
+  border-radius: 2px;
+  height: 30px;
+  width: 250px;
+  box-shadow: 0px 2px 2px 0px grey;
+}
+
+.search button {
+  border-width: 0px;
+  padding: 9px 6px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px 0px grey;
+}
+
+.bottombar {
+  position: absolute;
+  bottom: 0px;
+  height: 3em;
+  width: 100%;
+  background-color: #80808018;
+  border: 1px solid #80808060;
+}
+
+#countrybar {
+  bottom: 3em;
+}
+
+#countrybar text {
+  /*vertical-align: middle;
+  line-height: 48px;*/
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+  left: 2em;
+  font-family: Arial;
+  color: gray;
+}
+
+.leftlinks {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.rightlinks {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+}
+
+.bottombar a {
+  color: gray;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.leftlinks a {
+  padding: 0em 0em 0em 2em;
+}
+
+.rightlinks a {
+  padding: 0em 2em 0em 0em;
 }
